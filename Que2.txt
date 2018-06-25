@@ -1,0 +1,5 @@
+$python3 main.py
+  File "main.py", line 14
+    print a.f(), b.f()
+          ^
+SyntaxError: invalid syntax
