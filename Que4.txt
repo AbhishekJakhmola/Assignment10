@@ -1,0 +1,36 @@
+class Shape:
+
+    def __init__(self):
+
+        self.length = 0
+
+        self.breath = 0
+
+    def Area(self,length,breath):
+
+        return length*breath
+
+class rectangle(Shape):
+
+    pass
+
+class square(Shape):
+
+    pass
+
+
+x= int (input("Enter length of your shape:"))
+
+y= int(input("Enter breath of your shape:"))
+
+if x==y:
+
+    r = square()
+
+    print("Area of square is:{}".format(r.Area(x,x)))
+
+else:
+
+    r = rectangle()
+
+    print("Area of rectangle is:{}".format(r.Area(x,y)))
