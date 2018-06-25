@@ -1,0 +1,70 @@
+class Cop:
+
+    def __init__(self):
+
+        self.name='Sunil'
+
+        self.age='43'
+
+        self.work_experience='15'
+
+        self.designation='SP'
+
+   
+ def display(self):
+
+        print("The",self.name," is",self.age," years old and has ",self.work_experience," of work experience. He is at the post of ",self.designation)
+
+
+    def update(self):
+
+        print("Update details")
+
+        name = input("Enter name: ")
+
+        self.name = name
+
+        age = input("Enter age: ")
+
+        self.age = age
+
+        work_experience = input("Enter years of experience: ")
+
+        self.work_experience =work_experience
+
+        designation = input("Enter designation: ")
+
+        self.designation = designation
+
+        print("The",self.name," is",self.age," years old and has ",self.work_experience," of work experience. He is at the post of ",self.designation)
+
+class Mission(Cop):
+
+    def __init__(self):
+
+        self.date='07/09/2018'
+
+        self.place='Pune'
+
+    def add_mission_details(self):
+
+        print("The mission is on",self.date," at ",self.place)
+
+        date = '14/05/2019'
+
+        place = "Mumbai"
+
+        print("The mission is on",self.date," at ",self.place)
+
+
+a=Cop()
+
+a.display()
+
+a.update()
+
+b = Mission()
+
+b.update()
+
+b.add_mission_details()
