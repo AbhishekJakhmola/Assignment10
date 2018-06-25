@@ -1,0 +1,13 @@
+class Animal:
+    def __init__(self):
+        self.name='Tiger'
+        self.height='175'
+        self.age = '13'
+    def animal_attribute(self):
+        print("Name:",self.name,"\nHeight of animal in cm is:",self.height,"\nAge of animal is:",self.age)
+  
+class Tiger(Animal):
+    pass
+
+a = Tiger()
+a.animal_attribute()
